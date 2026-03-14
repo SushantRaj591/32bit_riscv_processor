@@ -1,7 +1,7 @@
 module immGenerator(instruction_code,immSel,immValue);
 //immediate value is taken from instr code but for diff instr, immediate value are stored at diff places in instr code 
 //immSel is used to define the type of instruction so we can get immediate value as immediate value are stored at diff places in instr code 
-//immSel is decided by opcode and it is used to decide type of instr ,though this can also be done by opcode but for more beter and efficient use we use immSel
+//immSel is decided by opcode and it is used to decide type of instr ,though this can also be done by opcode but for more better and efficient use we use immSel
 //000 ->R type ,001 ->I type ,010 -> S type , 011->B type,100->U type,101 ->J type 
 input [31:0]instruction_code;
 input [2:0]immSel;
