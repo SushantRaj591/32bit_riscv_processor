@@ -15,7 +15,7 @@ module datMemory(clk,MemRead,MemWrite,addr,write_data,mem_data);
     end
 
 //load
-    always@(*) begin // why we dont use posedge here -> beacuse if we do it eill take 2 cycle first read memory then iin second cycle load extra delay and our cpu is a single cycle processor
+    always@(*) begin // why we dont use posedge here -> beacuse if we do it will take 2 cycle first read memory then in second cycle load extra delay and our cpu is a single cycle processor
       if(MemRead)
       mem_data=memory[addr>>2];
       else
